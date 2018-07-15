@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+    background-image: url("ve.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+h2{
+  text-align: center;
+  color: white;
+  background-color: rgba(16, 20, 16, 0.2);
+  padding: 10px 20px 10px 20px;
+  border-radius: 15px;
+  font-size: 29px;
+  margin-bottom: 30px;
+}
+
+strong{
+    font-weight: bold;
+}
+.box{
+    background-color:rgba(64, 69, 97, 0.8);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(16, 20, 16, 0.2);
+    animation: scal 0s ease-in-out infinite;
+    cursor: pointer;
+    
+}
+
+svg{
+    width: 100%;
+    height: 200px;
+}
+
+svg text{
+    font-size: 150px;
+    fill: rgba(0, 0,0, 0.3);
+    stroke-width: 1px;
+    stroke: white;
+    stroke-linejoin: round;
+    stroke-dasharray: 80;
+    animation: anime 1s linear infinite;
+}
+
+@keyframes anime{
+    100%{
+        stroke-dashoffset: 160;
+    }
+}
+
+.box:hover {
+    animation: scal 0.8s ease infinite;
+
+}
+
+@keyframes scal{
+    from{
+        background-color:rgba(64, 69, 97, 0.8);
+    }
+
+    to{
+        background-color:rgba(64, 69, 97, 0.0);
+    }
+}
